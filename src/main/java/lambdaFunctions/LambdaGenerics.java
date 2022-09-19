@@ -10,7 +10,7 @@ public class LambdaGenerics {
 		   T compute(T t);
 		}
 		public static class LambdaGenericFuncInterfaceTest {
-		   public static void main(String args[]) {
+		    {
 		      MyGeneric<String> reverse = (str) -> {   // Lambda Expression
 		         String result = "";
 		         for(int i = str.length()-1; i >= 0; i--)

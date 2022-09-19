@@ -7,7 +7,7 @@ public class Threads {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void main (String[] args) {
+	public static void Threads (String[] args) {
 		
 		for (int i= 0; i <=3; i++) {
 			Threads myThing = new Threads(i);

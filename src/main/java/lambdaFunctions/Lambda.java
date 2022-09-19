@@ -13,7 +13,7 @@ interface IFindItem<T> {
 // a lambda expression and tests the operation of the program.
 public class Lambda {
 
-  public static void main(String[] args) {
+   {
     // 1. Declare a functional interface reference for type String
     IFindItem<String> ref;
 
