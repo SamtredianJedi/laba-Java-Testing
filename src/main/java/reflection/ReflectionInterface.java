@@ -1,10 +1,12 @@
 package reflection;
+import org.apache.logging.log4j.*;
 
 import java.lang.Class;
 import java.lang.reflect.*;
  
 //define Interface Animals and PetAnimals
 interface Animals {
+	Logger demologger = LogManager.getLogger();
    public void display();
 }
  

@@ -1,6 +1,8 @@
 package multithreading;
+import org.apache.logging.log4j.*;
 
 public class MultiThreadsThing extends Thread{
+	Logger demologger = LogManager.getLogger();
 	
 	private int threadNumber;
 	public MultiThreadsThing (int threadNumber) {

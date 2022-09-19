@@ -1,8 +1,9 @@
 package reflection;
-
+import org.apache.logging.log4j.*;
 import java.lang.Class;
 import java.lang.reflect.*;
 class Student {
+	 Logger demologger = LogManager.getLogger();
   public String StudentName;
 }
 class PublicField {

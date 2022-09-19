@@ -1,6 +1,8 @@
 package animalClass;
+import org.apache.logging.log4j.*;
 
 public class Dog {
+	private static Logger demologger = LogManager.getLogger();
 
 	
 	public Dog(String animalName, int quality,
@@ -28,6 +30,12 @@ public class Dog {
     public void makeRest(){
         System.out.println("Dog  heaving a rest ");
     }
+	public static Logger getDemologger() {
+		return demologger;
+	}
+	public static void setDemologger(Logger demologger) {
+		Dog.demologger = demologger;
+	}
     
 
 

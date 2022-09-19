@@ -1,15 +1,19 @@
 package enums;
 
-public enum Sides {
+import org.apache.logging.log4j.*;
+
+
 	
 
 
-}
-	 enum Direction {
+
+public	enum Direction {
+	
 		
 		
 		    // enum fields
 		    EAST(0) {
+		    	private Logger demologger = LogManager.getLogger();
 		        @Override
 		        public String printDirection() {
 		            String message = "You are moving in east. You will face sun in morning time";

@@ -1,4 +1,5 @@
 package reflection;
+import org.apache.logging.log4j.*;
 
 
 import java.lang.Class;
@@ -6,6 +7,7 @@ import java.lang.reflect.*;
 //declare a class Vehicle with four methods
 class Vehicle {
    public void display() {
+	   Logger demologger = LogManager.getLogger();
       System.out.println("I am a Vehicle!!");
    }
    protected void start() {

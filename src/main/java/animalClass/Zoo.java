@@ -1,7 +1,11 @@
 package animalClass;
 
+import org.apache.logging.log4j.*;
+
 import java.util.ArrayList;
 public class Zoo {
+	private static Logger demologger = LogManager.getLogger();
+	
     private ArrayList<Avaries> avarie = new ArrayList<>();
    private int avarieAmount = 0;
    private final int area;

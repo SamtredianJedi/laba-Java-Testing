@@ -1,11 +1,13 @@
 //Java Program to Find the Number of Unique Words
 package numberOfUniqueWords;
+import org.apache.logging.log4j.*;
  
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
  
 public class NumberOfUniqueWords {
+	Logger demologger = LogManager.getLogger();
     // Function to calculate the number of unique words
     static int calculateNoOfUniqueWords(String str) {
         String[] words = str.split(" ");

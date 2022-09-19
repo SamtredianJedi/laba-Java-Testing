@@ -1,6 +1,8 @@
 package exceptions;
+import org.apache.logging.log4j.*;
 
 public class IncorrectFileNameException extends Exception {
+	private static Logger demologger = LogManager.getLogger();
 
 	/**
 	 * 

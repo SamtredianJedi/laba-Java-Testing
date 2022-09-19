@@ -1,10 +1,13 @@
 package animalClass;
 
-
+import org.apache.logging.log4j.*;
 
 import java.util.Objects;
 
+
+
 public abstract class  Animal  {
+	private static Logger demologger = LogManager.getLogger();
     private String animalName;
     private String animalType;
     private int age = 0;
@@ -18,7 +21,8 @@ public abstract class  Animal  {
     public Animal(String animalName, String animalType, 
     		int height,
     		int quality, 
-    		int price, int age, int width, int weight, int quantity){
+    		int price, int age, int width, int weight, int quantity)
+    {
     	
         this.animalType = animalType;
         this.animalName = animalName;

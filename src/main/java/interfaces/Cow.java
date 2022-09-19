@@ -1,6 +1,7 @@
 package interfaces;
-
+import org.apache.logging.log4j.*;
 public class Cow {
+	Logger demologger = LogManager.getLogger();
 	
 	public void Eat () {
 		System.out.println("I am eating");

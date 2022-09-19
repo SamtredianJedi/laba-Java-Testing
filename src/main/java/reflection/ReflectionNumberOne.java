@@ -1,4 +1,5 @@
 package reflection;
+import org.apache.logging.log4j.*;
 
 import java.lang.Class;
 import java.lang.reflect.*;
@@ -8,6 +9,7 @@ import java.lang.reflect.*;
 // in Java using the above APIs.
 class Car {
    public void display() {
+	   Logger demologger = LogManager.getLogger();
       System.out.println("I am a Car!!");
    }
    protected void start() {

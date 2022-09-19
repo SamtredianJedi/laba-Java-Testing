@@ -1,8 +1,9 @@
 package enums;
+import org.apache.logging.log4j.*;
 
 public enum Colors {
 	Colour,Black,White,Purple,Brown,Yellow,Red,Blue,Pink,Green,Violet;
-	
+	private static Logger demologger = LogManager.getLogger();
 
 	public String getColour() {
 

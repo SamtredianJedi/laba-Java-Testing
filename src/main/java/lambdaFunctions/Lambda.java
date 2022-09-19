@@ -1,7 +1,9 @@
 package lambdaFunctions;
+import org.apache.logging.log4j.*;
 
 // Template functional interface IFindItem
 interface IFindItem<T> {
+	Logger demologger = LogManager.getLogger();
   // a method that calculates the number of occurrences
   // of a given element in an array of numbers
   int Search(T item, T[] items);

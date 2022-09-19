@@ -1,6 +1,8 @@
 package multithreading;
+import org.apache.logging.log4j.*;
 
 public class Threads {
+	Logger demologger = LogManager.getLogger();
 	public Threads(int i) {
 		// TODO Auto-generated constructor stub
 	}

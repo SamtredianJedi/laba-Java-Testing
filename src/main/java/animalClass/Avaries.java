@@ -1,10 +1,11 @@
 package animalClass;
 
-
+import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 
 public class Avaries  {
+	private static Logger demologger = LogManager.getLogger();
     private ArrayList<Animal> animals = new ArrayList<>();
     final private int area;
     final private String animalType;

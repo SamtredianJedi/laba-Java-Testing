@@ -1,10 +1,12 @@
 package collectionStreaming;
+import org.apache.logging.log4j.*;
 //a simple program to demonstrate the use of stream in java
 import java.util.*;
 import java.util.stream.*;
   
 class StreamCollection
 {
+	private static Logger demologger = LogManager.getLogger();
   public static void main(String args[])
   {
   

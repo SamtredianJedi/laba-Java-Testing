@@ -1,9 +1,11 @@
 package reflection;
+import org.apache.logging.log4j.*;
 
 import java.lang.Class;
 import java.lang.reflect.*;
 //declare a class Person with three constructors
 class Person {
+	Logger demologger = LogManager.getLogger();
    public Person() { }          //constructor with no parameters
    public Person(String name) { }   //constructor with 1 parameter
    private Person(String name, int age) {}  //constructor with 2 parameters

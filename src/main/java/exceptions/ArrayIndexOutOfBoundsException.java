@@ -1,6 +1,7 @@
 package exceptions;
-
+import org.apache.logging.log4j.*;
 public class ArrayIndexOutOfBoundsException extends Exception {
+	private static Logger demologger = LogManager.getLogger();
 
 	/**
 	 * 

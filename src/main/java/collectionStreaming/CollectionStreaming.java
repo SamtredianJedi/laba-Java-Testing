@@ -1,4 +1,5 @@
 package collectionStreaming;
+import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -9,6 +10,7 @@ import java.util.stream.Stream;
 public class CollectionStreaming {
 	
 	public static void main (String[] args) {
+		Logger demologger = LogManager.getLogger();
 		
 		
 		List<String> items = new ArrayList<String>();

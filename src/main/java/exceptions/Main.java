@@ -1,10 +1,12 @@
 package exceptions;
 
 import java.io.File;
+import org.apache.logging.log4j.*;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public class Main{
+	private static Logger demologger = LogManager.getLogger();
 	@SuppressWarnings("null")
 	public static void main(String args[]) throws FileNotFoundException, IncorrectFileNameException, ArithmeticException, ArrayIndexOutOfBoundsException, NumberFormatException {
 	

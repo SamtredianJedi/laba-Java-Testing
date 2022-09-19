@@ -1,6 +1,8 @@
 package lambdaFunctions;
+import org.apache.logging.log4j.*;
 
 public class LambdaGenerics {
+	Logger demologger = LogManager.getLogger();
 	
 	
 	

@@ -1,6 +1,6 @@
 package collections;
 
-
+import org.apache.logging.log4j.*;
 
 //a Collections using sort() method
 
@@ -9,11 +9,12 @@ import java.util.Collections;
 import java.util.List;
 
 
-class school {
-
- // Main driver method
- public static void main(String[] args)
+class School {
+	private static Logger demologger = LogManager.getLogger();
+ 
+ 
  {
+	 
      // Creating a list
      // Declaring object of string type
      List<String> items = new ArrayList<>();

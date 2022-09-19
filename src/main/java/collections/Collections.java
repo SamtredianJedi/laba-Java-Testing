@@ -1,5 +1,6 @@
 package collections;
 
+import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -11,8 +12,9 @@ import java.util.PriorityQueue;
 
 
 
-public class main {
-	public main(String[] args) {
+public class Collections {
+	 {
+		 Logger demologger = LogManager.getLogger();
 		// it is only for String Objects
 		ArrayList<String> list1 = new ArrayList<String>();
 		

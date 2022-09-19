@@ -1,13 +1,15 @@
 package interfaces;
+import org.apache.logging.log4j.*;
 
 public class Main {
+	Logger demologger = LogManager.getLogger();
 	public static void main(String[] args) {
-		Animal animal1 = new Animal(1);
-		Person person1 = new Person("Rezo");
-		animal1.sleep();
-		person1.sayHello();
-		animal1.ShowInfo();
-		person1.showInfo();
+		Animal animal = new Animal(1);
+		Person person = new Person("Rezo");
+		animal.sleep();
+		person.sayHello();
+		animal.ShowInfo();
+		person.showInfo();
 		Cat cat = new Cat();
 		
 		

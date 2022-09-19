@@ -1,5 +1,9 @@
 package interfaces;
+import org.apache.logging.log4j.*;
 
 public interface Showable{  
-public void show();  
+	Logger demologger = LogManager.getLogger();
+public void show();
+
+void showInfo();  
 }  

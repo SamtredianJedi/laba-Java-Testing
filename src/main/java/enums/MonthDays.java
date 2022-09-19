@@ -1,15 +1,13 @@
 package enums;
 
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public enum MonthDays {
-	January,February,March,April,May,June
-	,July,August,September,Octomber,November,December;
 	
-	
-	enum Size {
 		
 		   January {
+			   private Logger demologger = LogManager.getLogger();
 
 		      @Override
 		      public String toString() {
@@ -177,6 +175,6 @@ September{
 	
 
 		
-		}
+		
 
 

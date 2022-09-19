@@ -1,7 +1,8 @@
 package interfaces;
+import org.apache.logging.log4j.*;
 
-public abstract class Animal implements Showable{
-	
+public  class Animal implements Showable{
+	Logger demologger = LogManager.getLogger();
 	public int Id;
 	
 	public Animal(int id) {
@@ -23,6 +24,18 @@ public abstract class Animal implements Showable{
 
 	public void Height() {
 		
+		
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showInfo() {
+		// TODO Auto-generated method stub
 		
 	}
 

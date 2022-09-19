@@ -1,12 +1,15 @@
 package enums;
+import org.apache.logging.log4j.*;
 
 public class Main {
+	
 	
 	
 		
 		
 		
 		 public void main(String[] args) {
+			 Logger demologger = LogManager.getLogger();
 			    WeekDays weekdays = WeekDays.THURSDAY;
 			    switch (weekdays) {
 			      case MONDAY:

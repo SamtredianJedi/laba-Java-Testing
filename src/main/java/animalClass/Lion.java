@@ -1,6 +1,9 @@
 package animalClass;
+import org.apache.logging.log4j.*;
 
 public class Lion {
+	private static Logger demologger = LogManager.getLogger();
+	
 	
 	 public Lion(String animalName, int quality,
 	    		int weight,

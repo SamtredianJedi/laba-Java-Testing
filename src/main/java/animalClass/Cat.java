@@ -1,6 +1,9 @@
 package animalClass;
 
+import org.apache.logging.log4j.*;
+
 public class Cat extends Animal{
+	private static Logger demologger = LogManager.getLogger();
 	 public Cat(String animalName, int quality,
 	    		int weight,
 	    		int width,

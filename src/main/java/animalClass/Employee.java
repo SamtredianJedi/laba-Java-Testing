@@ -1,6 +1,8 @@
 package animalClass;
+import org.apache.logging.log4j.*;
 
 public class Employee {
+	private static Logger demologger = LogManager.getLogger();
 
     public void feedAnimals(Animal animal){
         System.out.println("AnimalClasses.Animal " + animal.getAnimalName() + " Animal Has been fed");
