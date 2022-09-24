@@ -1,8 +1,11 @@
 package interfaces;
 import org.apache.logging.log4j.*;
 
-public  class Person implements Showable{
-	Logger demologger = LogManager.getLogger();
+public  class Person implements IShowable{
+	
+	private static final Logger LOGGER = LogManager.getLogger(Person.class);
+	
+	
 	public String name;
 	
 	public Person(String name) {
@@ -10,7 +13,7 @@ public  class Person implements Showable{
 	}
 	
 	public void sayHello() {
-		System.out.println("Hello");
+		LOGGER.info("Hello");
 		
 	}
 	
@@ -18,12 +21,12 @@ public  class Person implements Showable{
 
 	@Override
 	public void showInfo() {
-		System.out.println("Name is " +this.name);
+		LOGGER.info("Name is " +this.name);
 	}
 
 	@Override
 	public void show() {
-		// TODO Auto-generated method stub
+		LOGGER.info("show ");
 		
 	}
 

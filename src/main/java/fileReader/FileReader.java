@@ -12,7 +12,7 @@ public class FileReader {
 	public static void main (String[] args) {// method header
 		final Logger LOGGER = LogManager.getLogger(FileReader.class);
 	
-	String text = readString("SOLVD/Solvd/src/Recources/text for File reader.txt");
+	String text = readString("src/main/resources/text.txt");
 	LOGGER.info(text);
 	}
 	
@@ -26,7 +26,7 @@ public class FileReader {
 			
 		}
 		catch(FileNotFoundException e) {
-			LOGGER.info("file not found ");
+			System.out.println("file not found ");
 		}
 		return text;
 		

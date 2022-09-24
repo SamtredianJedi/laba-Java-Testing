@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<continents>
+    <europe>
+        <Georgia>
+            <capital>
+                Tbilisi
+            </capital>
+            <population>
+               1080000
+            </population>
+        </Georgia>
+        <Portugal>
+            <capital>
+                Lisbon
+            </capital>
+            <population>
+               2986000
+            </population>
+        </Portugal>
+        <poland>
+            <capital>
+                Warsaw
+            </capital>
+            <population>
+                1735000
+            </population>
+        </poland>
+    </europe>
+    <asia>
+        <china>
+            <capital>
+                Beijing
+            </capital>
+            <population>
+                21700000
+            </population>
+        </china>
+
+        <vietnam>
+            <capital>
+                Hanoi
+            </capital>
+            <population>
+                7500000
+            </population>
+        </vietnam>
+    </asia>
+</continents>

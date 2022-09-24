@@ -14,8 +14,32 @@
     <version>2.3.0</version>
     
   </parent>
-  <dependencies>
-<dependency>
+  
+			  <dependencies>
+			  <dependency>
+			  <groupId>javax.xml.bind</groupId>
+			  <artifactId>jaxb-api</artifactId>
+			  <version>2.3.0</version>
+			</dependency>
+			<dependency>
+			  <groupId>com.sun.xml.bind</groupId>
+			  <artifactId>jaxb-core</artifactId>
+			  <version>2.3.0</version>
+			</dependency>
+			<dependency>
+			
+			
+			  <groupId>com.sun.xml.bind</groupId>
+			  <artifactId>jaxb-impl</artifactId>
+			  <version>2.3.0</version>
+			</dependency>
+			  <dependency>  
+			    <groupId>com.googlecode.json-simple</groupId>  
+			    <artifactId>json-simple</artifactId>  
+			    <version>1.1</version>  
+			  </dependency>  
+			<dependency>
+
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
       <version>2.18.0</version>
@@ -27,7 +51,10 @@
     </dependency>
 </dependencies>
 
+
+
   <build>
+  
    <plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -42,5 +69,7 @@
    </plugins>
    
   </build>
+  
+  
 
 </project>

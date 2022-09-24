@@ -1,5 +1,5 @@
 package interfaces;
-import org.apache.logging.log4j.*;
+
 
 public interface AnimalInterface {
 	

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding=ISO-8859-15"?>
+<root><Colors>Red</Colors><Colors><Colors>Black</Colors><Colors><White</Colors><Car>Swift Dzire</Car>Price>10k dollars</Price><Model>2021</Model></root>
+

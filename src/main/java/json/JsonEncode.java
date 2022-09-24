@@ -1,6 +1,10 @@
 package json;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONObject;
+
 public class JsonEncode {
+	private static final Logger LOGGER = LogManager.getLogger(JsonEncode.class);
 	
 
 	
@@ -13,8 +17,7 @@ public class JsonEncode {
 	      obj.put("balance", new Double(1000.21));
 	      obj.put("is_vip", new Boolean(true));
 
-	      System.out.print(obj);
+	     LOGGER.info(obj);
 	   }
-	}
-
+	
 }

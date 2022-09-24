@@ -1,19 +1,20 @@
 package interfaces;
 import org.apache.logging.log4j.*;
 
-public class Cat{
-	Logger demologger = LogManager.getLogger();
+public class Cat {
+	private static final Logger LOGGER = LogManager.getLogger(Cat.class);
+	
 	
 	public void Eat () {
-		System.out.println("I am eating");
+		LOGGER.info("Cat is eating");
 	}
 	
 	public void Weight () {
-		System.out.println("Cat's Weight is: ");
+		LOGGER.info("Cat's Weight is: ");
 	}
 	
 	public void Height() {
-		System.out.println("Cat's Heigjt is: ");
+		LOGGER.info("Cat's Height is: ");
 	}
 	
 

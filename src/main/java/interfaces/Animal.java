@@ -1,8 +1,8 @@
 package interfaces;
 import org.apache.logging.log4j.*;
 
-public  class Animal implements Showable{
-	Logger demologger = LogManager.getLogger();
+public  class Animal implements IShowable{
+	private static final Logger LOGGER = LogManager.getLogger(Animal.class);
 	public int Id;
 	
 	public Animal(int id) {
@@ -10,7 +10,7 @@ public  class Animal implements Showable{
 	}
 	
 	public void sleep () {
-		System.out.println("I am sleeping");
+		LOGGER.info("I am sleeping");
 	}
 	
 	
@@ -18,11 +18,12 @@ public  class Animal implements Showable{
 	
 	
 		public void ShowInfo() {
-			System.out.println("id is "+this.Id);
+			LOGGER.info("id is "+this.Id);
 		}
 	
 
 	public void Height() {
+		LOGGER.info("The Height is: ");
 		
 		
 	}
