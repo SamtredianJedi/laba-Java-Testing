@@ -15,8 +15,10 @@ import java.util.PriorityQueue;
 
 
 public class Collections {
-	 {
-		 final Logger LOGGER = LogManager.getLogger(Collections.class);
+	
+	private static final Logger LOGGER = LogManager.getLogger(Collections.class);
+     public static void main(String[] args) {
+    	 
 		// it is only for String Objects
 		ArrayList<String> list1 = new ArrayList<String>();
 		

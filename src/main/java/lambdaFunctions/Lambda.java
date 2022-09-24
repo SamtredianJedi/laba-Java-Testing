@@ -5,7 +5,6 @@ import multithreading.MultiThreadsThing;
 
 // Template functional interface IFindItem
 interface IFindItem<T> {
-	static final Logger LOGGER = LogManager.getLogger(Lambda.class);
   // a method that calculates the number of occurrences
   // of a given element in an array of numbers
   int Search(T item, T[] items);
@@ -14,6 +13,7 @@ interface IFindItem<T> {
 // A class that contains methods that implement
 // a lambda expression and tests the operation of the program.
 public class Lambda {
+	private static final Logger LOGGER = LogManager.getLogger(Lambda.class);
 
    {
     // 1. Declare a functional interface reference for type String
@@ -33,6 +33,6 @@ public class Lambda {
 
     // 4. Test lambda expression
     int count = ref.Search("abc", AS);
-    System.out.println("count = " + count); // count = 2
+    LOGGER.info("count = " + count); // count = 2
   }
 }

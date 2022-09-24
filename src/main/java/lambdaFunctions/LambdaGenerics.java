@@ -4,8 +4,8 @@ import org.apache.logging.log4j.*;
 import multithreading.MultiThreadsThing;
 
 public class LambdaGenerics {
-	private static final Logger LOGGER = LogManager.getLogger(LambdaGenerics.class);
 	
+	private static final Logger LOGGER = LogManager.getLogger(LambdaGenerics.class);
 	
 		
 	
@@ -13,9 +13,7 @@ public class LambdaGenerics {
 	interface MyGeneric<T> {
 		   T compute(T t);
 		}
-	public static void main(String[] args) {
-		
-	}
+	
 	
 		public static class LambdaGenericFuncInterfaceTest {
 		    {
@@ -34,6 +32,7 @@ public class LambdaGenerics {
 		      };
 		      LOGGER.info(reverse.compute("Lambda Generic Functional Interface"));
 		      LOGGER.info(factorial.compute(7));
+		      
 		   }
 		}
 	

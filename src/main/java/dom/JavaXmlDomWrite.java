@@ -18,11 +18,12 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 public class JavaXmlDomWrite {
+	private static final Logger LOGGER = LogManager.getLogger(JavaXmlDomWrite.class);
 
     public static void main(String[] args) throws ParserConfigurationException,
             TransformerException {
-    	final Logger LOGGER = LogManager.getLogger(JavaXmlDomWrite.class);
 
+    	
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document doc = builder.newDocument();

@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class FileReader {
 	
+	private static final Logger LOGGER = LogManager.getLogger(FileReader.class);
 	public static void main (String[] args) {// method header
-		final Logger LOGGER = LogManager.getLogger(FileReader.class);
 	
 	String text = readString("src/main/resources/text.txt");
 	LOGGER.info(text);
@@ -26,7 +26,7 @@ public class FileReader {
 			
 		}
 		catch(FileNotFoundException e) {
-			System.out.println("file not found ");
+			LOGGER.info("file not found ");
 		}
 		return text;
 		

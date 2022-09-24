@@ -11,8 +11,8 @@ import java.util.stream.Stream;
 
 public class CollectionStreaming {
 	
+	private static final Logger LOGGER = LogManager.getLogger(CollectionStreaming.class);
 	public static void main (String[] args) {
-		final Logger LOGGER = LogManager.getLogger(CollectionStreaming.class);
 		
 		
 		List<String> items = new ArrayList<String>();

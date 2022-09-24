@@ -12,7 +12,6 @@ import java.util.List;
 class School {
 	private static final Logger LOGGER = LogManager.getLogger(School.class);
  
- 
  {
 	 
      // Creating a list

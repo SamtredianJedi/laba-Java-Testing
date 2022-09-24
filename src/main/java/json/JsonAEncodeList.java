@@ -7,8 +7,8 @@ import org.apache.logging.log4j.*;
 
 
 public class JsonAEncodeList{    
+	private static final Logger LOGGER = LogManager.getLogger(JsonAEncodeList.class);
 public static void main(String args[]){  
-	final Logger LOGGER = LogManager.getLogger(JsonAEncodeList.class);
 	
 	
   List arr = new ArrayList();  

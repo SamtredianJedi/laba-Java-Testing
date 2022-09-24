@@ -8,20 +8,21 @@ import java.lang.reflect.*;
 // The below example shows the reflection of class methods
 // in Java using the above APIs.
 class Car {
+	private static final Logger LOGGER = LogManager.getLogger(Car.class);
    public void display() {
-	   Logger demologger = LogManager.getLogger();
-      System.out.println("I am a Car!!");
+      LOGGER.info("I am a Car!!");
    }
    protected void start() {
-      System.out.println("Car Started!!!");
+	   LOGGER.info("Car Started!!!");
    }
     protected void stop() {
-      System.out.println("Car Stopped!!!");
+    	LOGGER.info("Car Stopped!!!");
    }
    private void serviceVehicle() {
-      System.out.println("Car serviced!!");
+	   LOGGER.info("Car serviced!!");
    }
 }class Main {
+	private static final Logger LOGGER = LogManager.getLogger(Main.class);
    public static void main(String[] args) {
       try {
           Car car = new Car();
@@ -33,15 +34,15 @@ class Car {
  
 // for each method get method info
           for(Method m : methods) {               
-             System.out.println("Method Name: " + m.getName());
+             LOGGER.info("Method Name: " + m.getName());
                
              // get the access modifier of methods
              int modifier = m.getModifiers();
-             System.out.print("Modifier: " + Modifier.toString(modifier) + "  ");
+             LOGGER.info("Modifier: " + Modifier.toString(modifier) + "  ");
                
              // get the return type of method
-             System.out.print("Return Type: " + m.getReturnType());
-             System.out.println("\n");
+             LOGGER.info("Return Type: " + m.getReturnType());
+             LOGGER.info("\n");
           }
        }
        catch(Exception e) {

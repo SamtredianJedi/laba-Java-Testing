@@ -6,20 +6,21 @@ import java.lang.Class;
 import java.lang.reflect.*;
 //declare a class Vehicle with four methods
 class Vehicle {
+	private static final Logger LOGGER = LogManager.getLogger(Vehicle.class);
    public void display() {
-	   Logger demologger = LogManager.getLogger();
-      System.out.println("I am a Vehicle!!");
+      LOGGER.info("I am a Vehicle!!");
    }
    protected void start() {
-      System.out.println("Vehicle Started!!!");
+      LOGGER.info("Vehicle Started!!!");
    }
     protected void stop() {
-      System.out.println("Vehicle Stopped!!!");
+      LOGGER.info("Vehicle Stopped!!!");
    }
    private void serviceVehicle() {
-      System.out.println("Vehicle serviced!!");
+      LOGGER.info("Vehicle serviced!!");
    }
 }class Example {
+	private static final Logger LOGGER = LogManager.getLogger(Example.class);
    public static void main(String[] args) {
       try {
           Vehicle car = new Vehicle(); 
@@ -31,15 +32,15 @@ class Vehicle {
  
 // for each method get method info
           for(Method m : methods) {               
-             System.out.println("Method Name: " + m.getName());
+             LOGGER.info("Method Name: " + m.getName());
                
              // get the access modifier of methods
              int modifier = m.getModifiers();
-             System.out.print("Modifier: " + Modifier.toString(modifier) + "  ");
+             LOGGER.info("Modifier: " + Modifier.toString(modifier) + "  ");
                
              // get the return type of method
-             System.out.print("Return Type: " + m.getReturnType());
-             System.out.println("\n");
+             LOGGER.info("Return Type: " + m.getReturnType());
+             LOGGER.info("\n");
           }
        }
        catch(Exception e) {
