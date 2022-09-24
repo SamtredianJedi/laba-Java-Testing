@@ -2,18 +2,21 @@ package enums;
 import org.apache.logging.log4j.*;
 
 
-	enum CoffeeSize {
+
+
+	public enum CoffeeSize {
 		
 
 	    BIG(8), LARGE(10),HUGE(12),OVERWHELMING();
 	    private int ounces ;
-	    private static Logger demologger = LogManager.getLogger();
+	    private static final Logger LOGGER = LogManager.getLogger(CoffeeSize.class);
 
 	    static {
-	        System.out.println("static block ");
+	        LOGGER.info("static block ");
 	    }
+	    static 
 	    {
-	        System.out.println("instance block");
+	        LOGGER.info("instance block");
 	    }
 
 	    private CoffeeSize(int ounces){

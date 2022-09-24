@@ -1,13 +1,13 @@
-package animalClass;
+package animalclass;
 
 import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 public class Zoo {
-	private static Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(Zoo.class);
 	
     private ArrayList<Avaries> avarie = new ArrayList<>();
-   private int avarieAmount = 0;
+   private int avarieAmount;
    private final int area;
    private final String address;
 
@@ -51,7 +51,7 @@ public class Zoo {
         }
         //Checks if There is enough Area to Add new Avarie
         if(sumArea + avarie.getArea() > this.area){
-            System.out.println("Not Enough Space To Add Avarie");
+            LOGGER.info("Not Enough Space To Add Avarie");
         }else{
             this.avarie.add(avarie);
         }
@@ -67,7 +67,7 @@ public class Zoo {
 
     @Override
     public String toString() {
-        String result = "This AnimalClasses.Zoo Contains: \n";
+        String result = "This animalclass.Zoo Contains: \n";
         for(Avaries v : avarie){
             result += "Avarie Of " + v.getAnimalType() +"'s"
                     + "\nAvarie Area: " + v.getArea()

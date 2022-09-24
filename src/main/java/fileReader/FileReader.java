@@ -1,5 +1,8 @@
-package fileReader;
+package filereader;
 import org.apache.logging.log4j.*;
+
+import animalclass.Animal;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -7,10 +10,10 @@ import java.util.Scanner;
 public class FileReader {
 	
 	public static void main (String[] args) {// method header
-		Logger demologger = LogManager.getLogger();
+		final Logger LOGGER = LogManager.getLogger(FileReader.class);
 	
 	String text = readString("SOLVD/Solvd/src/Recources/text for File reader.txt");
-	System.out.println(text);
+	LOGGER.info(text);
 	}
 	
 	public static String readString(String file) {
@@ -23,7 +26,7 @@ public class FileReader {
 			
 		}
 		catch(FileNotFoundException e) {
-			System.out.println("file not found ");
+			LOGGER.info("file not found ");
 		}
 		return text;
 		

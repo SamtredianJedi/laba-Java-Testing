@@ -1,4 +1,4 @@
-package animalClass;
+package animalclass;
 
 import org.apache.logging.log4j.*;
 
@@ -7,39 +7,36 @@ import java.util.Objects;
 
 
 public abstract class  Animal  {
-	private static Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(Animal.class);
     private String animalName;
     private String animalType;
-    private int age = 0;
-    private int weight = 0;
-    private int width = 0;
-    private int quantity = 0;
-    private int price = 0;
-    private int quality = 0;
-    private int height = 0;
+    private int age;
+    private int weight;
+    private int width;
+    private int price ;
+    private int quality  ;
+    private int height  ;
 
     public Animal(String animalName, String animalType, 
     		int height,
     		int quality, 
-    		int price, int age, int width, int weight, int quantity)
+    		int price, int age, int width, int weight)
     {
     	
         this.animalType = animalType;
         this.animalName = animalName;
         this.weight = weight;
         this.age = age;
-        this.width = width;
-        this.quantity = quantity;
+        this.width = width;  
         this.price = price;
         this.quality = quality;
         this.height = height;
     }
-    public Animal(String animalName, int width, int weight, int age, int quality, int height, int price, int quantity	){
+    public Animal(String animalName, int width, int weight, int age, int quality, int height, int price){
         this.animalName = animalName;
         this.width = width;
         this.weight = weight;
-        this.age = age;
-        this.quantity = quantity;
+        this.age = age; 
         this.price = price;
         this.quality = quality;
         this.height = height;
@@ -64,12 +61,7 @@ public abstract class  Animal  {
 
     public int getWidth() {
         return width;
-    }
-
-    public int getQuantity() {
-    	return quantity;
-    }
-    
+    }    
     public int getPrice() {
     	return price;
     }
@@ -93,10 +85,6 @@ public abstract class  Animal  {
     public void setWidth(int width) {
         this.width = width;
     }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
     
     public void setPrice(int price) {
         this.price = price;
@@ -112,19 +100,19 @@ public abstract class  Animal  {
 
     //animal Actions
     public void makeRun(){
-        System.out.println("make run");
+        LOGGER.info("make run");
     }
     public void makeBreath(){
-        System.out.println("make Breath");
+        LOGGER.info("make Breath");
     }
     public void makeHeal(){
-        System.out.println("make Heal");
+      LOGGER.info("make Heal");
     }
     public void makeEat(){
-        System.out.println("eat");
+        LOGGER.info("eat");
     }
     public void makeRest(){
-        System.out.println("have a rest ");
+        LOGGER.info("have a rest");
     }
     
     
@@ -135,25 +123,24 @@ public abstract class  Animal  {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Animal animal = (Animal) o;
-        return age == animal.age && height == animal.height && quality == animal.quality && weight == animal.weight && price == animal.price && quantity == animal.quantity && width == animal.width && Objects.equals(animalName, animal.animalName) && Objects.equals(animalType, animal.animalType);
+        return age == animal.age && height == animal.height && quality == animal.quality && weight == animal.weight && price == animal.price && width == animal.width && Objects.equals(animalName, animal.animalName) && Objects.equals(animalType, animal.animalType);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(animalName, animalType, age, weight, width,quantity,price,quality, height);
+        return Objects.hash(animalName, animalType, age, weight, width,price,quality, height);
     }
 
     @Override
     public String toString() {
-        return "AnimalClass.Animal Name: " + animalName
-                + "\nAnimalClass.Animal Type: " + animalType
-                + "\nAnimalClass.Animal Weight: " + weight
-                + "\nAnimalClass.Animal Age: " + age
-        		+ "\nAnimalClass.Animal Width: " + width
-        		+ "\nAnimalClass.Animal Quantity: " + quantity
-        		+ "\nAnimalClass.Animal Price: " + price
-        		+ "\nAnimalClass.Animal Quality: " + quality
-        		+ "\nAnimalClass.Animal Height: " + height;
+        return "animalclass.Animal Name: " + animalName
+                + "\nanimalclass.Animal Type: " + animalType
+                + "\nanimalclass.Animal Weight: " + weight
+                + "\nanimallass.Animal Age: " + age
+        		+ "\nanimalclass.Animal Width: " + width 		
+        		+ "\nanimalclass.Animal Price: " + price
+        		+ "\nanimalclass.Animal Quality: " + quality
+        		+ "\nanimalclass.Animal Height: " + height;
         
     }
 }

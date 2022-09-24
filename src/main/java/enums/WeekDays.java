@@ -3,14 +3,9 @@ import org.apache.logging.log4j.*;
 
 
 public enum WeekDays {
-	THURSDAY,
-      SUNDAY ,
-   MONDAY ,
- TUESDAY ,
- WEDNESDAY ,
- FRIDAY , 
- SATURDAY ;
-	private static Logger demologger = LogManager.getLogger();
+	THURSDAY, SUNDAY , MONDAY ,TUESDAY , WEDNESDAY ,FRIDAY , SATURDAY ;
+	private final Logger LOGGER = LogManager.getLogger(WeekDays.class);
+
  
  
 		public class EnumWithoutValues {
@@ -18,37 +13,44 @@ public enum WeekDays {
 		 {
 		    WeekDays weekdays = WeekDays.THURSDAY;
 		    switch (weekdays) {
+		    
 		      case MONDAY:
-		      System.out.println("Marketing Monday");
+		      LOGGER.info("Marketing Monday");
 		      doYourTaskForWeekDays(weekdays);
 		      break;
-		      case TUESDAY:
-		      System.out.println("Trendy Tuesday");
-		     doYourTaskForWeekDays(weekdays);
-		      break;
-		      case WEDNESDAY:
-		      System.out.println("Wellness Wednesday");
-		        doYourTaskForWeekDays(weekdays);
-		      break;
-		      case THURSDAY:
-		      System.out.println("Thankful Thursday");
-		        doYourTaskForWeekDays(weekdays);
-		      break;
-		      case FRIDAY:
-		      System.out.println("Foodie Friday");
-		      doYourTaskForWeekDays(weekdays);
-		      break;
-		      case SATURDAY:
-		      System.out.println("Social Saturday");
-		     doYourTaskForWeekEnds();
-		      break;
-		      case SUNDAY:
-			      System.out.println("Sunday Funday");
-			      doYourTaskForWeekEnds();
-			      break;
+		      
+		      		case TUESDAY:
+		      		LOGGER.info("Trendy Tuesday");
+		      		doYourTaskForWeekDays(weekdays);
+		      		break;
+		      		
+		      			case WEDNESDAY:
+		      			LOGGER.info("Wellness Wednesday");
+		      			doYourTaskForWeekDays(weekdays);
+		      			break;
+		      			
+		      				case THURSDAY:
+		      				LOGGER.info("Thankful Thursday");
+		      				doYourTaskForWeekDays(weekdays);
+		      				break;
+		      				
+		      					case FRIDAY:
+		      					LOGGER.info("Foodie Friday");
+		      					doYourTaskForWeekDays(weekdays);
+		      					break;
+		      					
+		      						case SATURDAY:
+		      						LOGGER.info("Social Saturday");
+		      						doYourTaskForWeekEnds();
+		      						break;
+		      						
+		      							case SUNDAY:
+		      							LOGGER.info("Sunday Funday");
+		      							doYourTaskForWeekEnds();
+		      							break;
 			      
 			    default:
-			    	System.out.println("Please enter a valid day.");
+			    	LOGGER.info("Please enter a valid day.");
 			    	break;
 		    }
 		  }

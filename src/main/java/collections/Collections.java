@@ -2,6 +2,8 @@ package collections;
 
 import org.apache.logging.log4j.*;
 
+import animalclass.Zoo;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -14,7 +16,7 @@ import java.util.PriorityQueue;
 
 public class Collections {
 	 {
-		 Logger demologger = LogManager.getLogger();
+		 final Logger LOGGER = LogManager.getLogger(Collections.class);
 		// it is only for String Objects
 		ArrayList<String> list1 = new ArrayList<String>();
 		
@@ -49,56 +51,56 @@ public class Collections {
 		// Getting element from the list
 		
 		String name = list1.get(2);
-		System.out.println("name is: "+name);
+		LOGGER.info("name is: "+name);
 		
 		Object O = list2.get(2);
-		System.out.println("O is : " + O );
+		LOGGER.info("O is : " + O );
 		
 		// Update element in list 
 		
 		list1.set(2, "Rezo");
-		System.out.println("list now is: "+list1);
+		LOGGER.info("list now is: "+list1);
 		
 		
 		// Remove element from the list 
 		list1.remove(2);
-		System.out.println("list1 after remove is: "+list1);
+		LOGGER.info("list1 after remove is: "+list1);
 		
 		
 		if(list1.contains("John")) {
-			System.out.println("Rezo is in the list");
+			LOGGER.info("Rezo is in the list");
 		}
 		
 		
 		// Iterate in ArrayList
-		System.out.println("iterating ArrayList With for loop");
+		LOGGER.info("iterating ArrayList With for loop");
 		 for(int i=0; i<list1.size();i++) {
-			 System.out.println(list1.get(i));
+			 LOGGER.info(list1.get(i));
 		 }
-		 System.out.println("=========");
+		 LOGGER.info("=========");
 		 
-		 System.out.println("iterating wiwth enhanced for loop");
+		 LOGGER.info("iterating wiwth enhanced for loop");
 		 for(String str : list1) {
-			 System.out.println(str);
+			 LOGGER.info(str);
 		 }
-		 System.out.println("=========");
+		 LOGGER.info("=========");
 		 
-		 System.out.println("iterating with iterator");
+		 LOGGER.info("iterating with iterator");
 		 Iterator<String> itr = list1.iterator();
-		 System.out.println(itr.next());
-		 System.out.println(itr.next());
-		 System.out.println(itr.next());
+		 LOGGER.info(itr.next());
+		 LOGGER.info(itr.next());
+		 LOGGER.info(itr.next());
 		
 		while(itr.hasNext()) {
 			String str = itr.next();
-			System.out.println(str);
+			LOGGER.info(str);
 			if(str.equals("Sandro")) {
 				itr.remove();
 			}
 		}
-		System.out.println("===========");
+		LOGGER.info("===========");
 		
-		System.out.println("list1 afrer iteration is: "+list1);
+		LOGGER.info("list1 afrer iteration is: "+list1);
 		
 		PriorityQueue<Integer> queue = new PriorityQueue<Integer>();
 		
@@ -114,13 +116,13 @@ public class Collections {
 		// Peeking -> Obtaining the head Of Queue
 		// Poiling -> Remove the head of Queue
 		
-		System.out.println("Queue Size is: "+queue.size());
-		System.out.println("Head of Queue is: "+queue.peek()); // Head of Queue
+		LOGGER.info("Queue Size is: "+queue.size());
+		LOGGER.info("Head of Queue is: "+queue.peek()); // Head of Queue
 		
 		queue.poll(); // Removing the head 1
-		System.out.println("Queue Size After Poll is: "+queue.size());
+		LOGGER.info("Queue Size After Poll is: "+queue.size());
 		
-		System.out.println("Head of Queue is: "+queue.peek()); // New Head Of Queue : 2
+		LOGGER.info("Head of Queue is: "+queue.peek()); // New Head Of Queue : 2
 		
 		
 		
@@ -141,21 +143,21 @@ public class Collections {
 		// 1. Data is Unique, No Redundancy
 		// 2. Data is unordered in output due to hashing
 		
-		System.out.println("set is: "+set);
+		LOGGER.info("set is: "+set);
 		
 		Iterator<String> itr1 = set.iterator();
 		while(itr.hasNext()) {
 			String str = itr.next();
-			System.out.println(str);
+			LOGGER.info(str);
 		}
 		
 		set.remove("Leqso");
-		System.out.println("set afer removing Leqso is: "+set);
+		LOGGER.info("set afer removing Leqso is: "+set);
 		if(set.contains("John")) {
-			System.out.println("John is in the set");
+			LOGGER.info("John is in the set");
 		}
 		
-		System.out.println("set size is "+set.size());
+		LOGGER.info("set size is "+set.size());
 		
 		
 		

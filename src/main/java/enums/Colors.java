@@ -3,7 +3,7 @@ import org.apache.logging.log4j.*;
 
 public enum Colors {
 	Colour,Black,White,Purple,Brown,Yellow,Red,Blue,Pink,Green,Violet;
-	private static Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(Colors.class);
 
 	public String getColour() {
 

@@ -1,8 +1,9 @@
 package exceptions;
 import org.apache.logging.log4j.*;
-public class ArrayIndexOutOfBoundsException extends Exception {
-	private static Logger demologger = LogManager.getLogger();
 
+import enums.CoffeeSize;
+public class ArrayIndexOutOfBoundsException extends Exception {
+	private static final Logger LOGGER = LogManager.getLogger(ArrayIndexOutOfBoundsException.class);
 	/**
 	 * 
 	 */

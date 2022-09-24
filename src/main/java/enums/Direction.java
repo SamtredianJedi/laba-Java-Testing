@@ -7,13 +7,13 @@ import org.apache.logging.log4j.*;
 
 
 
-public	enum Direction {
+public enum Direction {
 	
 		
 		
 		    // enum fields
 		    EAST(0) {
-		    	private Logger demologger = LogManager.getLogger();
+		    	private final Logger LOGGER = LogManager.getLogger(Direction.class);
 		        @Override
 		        public String printDirection() {
 		            String message = "You are moving in east. You will face sun in morning time";

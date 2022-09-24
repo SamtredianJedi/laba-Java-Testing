@@ -1,15 +1,15 @@
-package animalClass;
+package animalclass;
 
 import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 
 public class Avaries  {
-	private static Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(Avaries.class);
     private ArrayList<Animal> animals = new ArrayList<>();
     final private int area;
     final private String animalType;
-    private int animalQuantity = 0;
+    private int animalQuantity;
 
     public Avaries(int area, ArrayList<Animal> animals, String animalType){
         this.area = area;
@@ -54,7 +54,7 @@ public class Avaries  {
         return result;
     }
 
-    //Set AnimalClasses.Animal
+    //Set animalclass.Animal
     public void setAnimals(ArrayList<Animal> animals) {
         this.animals = animals;
     }
@@ -69,7 +69,7 @@ public class Avaries  {
 
     public boolean removeAnimal(Animal animal){
         if(animalQuantity == 0) {
-            System.out.println("Error!! No Animals In AnimalClasses.Vivarium");
+            LOGGER.info("Error!! No Animals In animalclass.Vivarium");
             return false;
         }
         if (animals.remove(animal)) {
@@ -82,7 +82,7 @@ public class Avaries  {
     //Add animal to Avaries
     public void addAnimal(Animal animal){
         if(animal.getAnimalType() != animalType){
-            System.out.println("Can't Place Different Animals in Same AnimalClasses.Vivarium");
+            LOGGER.info("Can't Place Different Animals in Same animalclass.Avaries");
             return;
         }
         animals.add(animal);
@@ -91,13 +91,13 @@ public class Avaries  {
 
     @Override
     public String toString(){
-        String result = "AnimalClasses.Vivarium Area: " + area + "\nList Of Animals: \n\n";
+        String result = "animalclass.Avaries Area: " + area + "\nList Of Animals: \n\n";
         for (Animal animal : animals) {
-            result += "AnimalClasses.Animal Name: " + animal.getAnimalName()
-                    + "\nAnimalClasses.Animal Type: " + animal.getAnimalType()
+            result += "animalclass.Animal Name: " + animal.getAnimalName()
+                    + "\nanimalclass.Animal Type: " + animal.getAnimalType()
                     + "\n ----------------\n";
         }
-        return result;
+        return result; 
     }
 
 }

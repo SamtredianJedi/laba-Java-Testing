@@ -1,32 +1,26 @@
-package animalClass;
+package animalclass;
 import org.apache.logging.log4j.*;
 public class Wolf {
-	private static Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(Wolf.class);
 	
-	 public Wolf(String animalName, int quality,
-	    		int weight,
-	    		int width,
-	    		int quantity,
-	    		int price,
-	    		int height,
-	    		int age) {
-	        super();
+	 public Wolf(String animalName, int quality, int weight,int width,int price,int height,int age) {
+	       super();
 	    }
 	    public void makeRun(){
-	        System.out.println("AnimalClass.Wolf Runs");
+	        LOGGER.info("animalclass.Wolf Runs"); 
 	    }
 	    
 	    public void makeBreath(){
-	        System.out.println("Wolf runs");
+	        LOGGER.info("Wolf runs");
 	    }
 	    public void makeHeal(){
-	        System.out.println("Wolf Heals");
+	        LOGGER.info("Wolf Heals");
 	    }
 	    public void makeEat(){
-	        System.out.println("Wolf eating");
+	        LOGGER.info("Wolf eating");
 	    }
 	    public void makeRest(){
-	        System.out.println("Wolf  heaving a rest ");
+	        LOGGER.info("Wolf  heaving a rest ");
 	    }
 	    
 

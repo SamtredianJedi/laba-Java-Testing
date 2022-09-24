@@ -1,23 +1,23 @@
 package multithreading;
 import org.apache.logging.log4j.*;
 
-public class Threads {
-	Logger demologger = LogManager.getLogger();
-	public Threads(int i) {
-		// TODO Auto-generated constructor stub
-	}
+import animalclass.Animal;
 
-	public static void Threads (String[] args) {
+public class  Threads {
+	private static final Logger LOGGER = LogManager.getLogger(Threads.class);
+	
+	public static void main (String[] args) {
 		
 		for (int i= 0; i <=3; i++) {
-			Threads myThing = new Threads(i);
-			myThing.start();
+			MultiThreadsThing name = new MultiThreadsThing();
+			name.start();
 		}
 	}
+	
+	
 
-	private void start() {
-		// TODO Auto-generated method stub
+	
 		
 	}
 
-}
+

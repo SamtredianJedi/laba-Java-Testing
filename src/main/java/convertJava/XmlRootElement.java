@@ -1,4 +1,4 @@
-package convertJava;
+package convertjava;
 
 public @interface XmlRootElement {
 

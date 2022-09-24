@@ -1,6 +1,7 @@
 package interfaces;
 import org.apache.logging.log4j.*;
-import animalClass.Dog;
+
+import animalclass.Dog;
 public interface ZooInterface {
 	Logger demologger = LogManager.getLogger();
 	

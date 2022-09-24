@@ -1,8 +1,10 @@
 package exceptions;
 import org.apache.logging.log4j.*;
 
+import enums.CoffeeSize;
+
 public class ArithmeticException extends Exception {
-	private static Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(ArithmeticException.class);
 	/**
 	 * 
 	 */

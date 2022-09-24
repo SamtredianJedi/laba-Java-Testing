@@ -1,16 +1,25 @@
 package lambdaFunctions;
 import org.apache.logging.log4j.*;
 
+import multithreading.MultiThreadsThing;
+
 public class LambdaGenerics {
-	Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(LambdaGenerics.class);
 	
+	
+		
 	
 	
 	interface MyGeneric<T> {
 		   T compute(T t);
 		}
+	public static void main(String[] args) {
+		
+	}
+	
 		public static class LambdaGenericFuncInterfaceTest {
 		    {
+		    	
 		      MyGeneric<String> reverse = (str) -> {   // Lambda Expression
 		         String result = "";
 		         for(int i = str.length()-1; i >= 0; i--)
@@ -23,9 +32,9 @@ public class LambdaGenerics {
 		            result = i * result;
 		         return result;
 		      };
-		      System.out.println(reverse.compute("Lambda Generic Functional Interface"));
-		      System.out.println(factorial.compute(7));
+		      LOGGER.info(reverse.compute("Lambda Generic Functional Interface"));
+		      LOGGER.info(factorial.compute(7));
 		   }
 		}
-
+	
 }

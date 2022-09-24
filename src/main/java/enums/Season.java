@@ -1,15 +1,13 @@
 package enums;
 import org.apache.logging.log4j.*;
 
-public class Weathers {
-	
-	
-}
+
 			
-	enum Season{   
+	public enum Season{   
 		
 	WINTER(5), SPRING(10), SUMMER(15), FALL(20); 
-		private static Logger demologger = LogManager.getLogger();
+		private  final Logger LOGGER = LogManager.getLogger(Season.class);
+
 	  
 	private int value;  
 	private Season(int value){  
@@ -18,7 +16,7 @@ public class Weathers {
 	
 	 
 	for (Season s : Season.values())  
-	System.out.println(s+" "+s.value);  
+	LOGGER.info(s+" "+s.value);  
 	  
 	}}  
 

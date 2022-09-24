@@ -22,7 +22,7 @@ class Vehicle {
 }class Example {
    public static void main(String[] args) {
       try {
-          Vehicle car = new Vehicle();
+          Vehicle car = new Vehicle(); 
           // create an object of Class
           Class obj = car.getClass();
            

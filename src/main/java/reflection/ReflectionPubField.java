@@ -20,7 +20,7 @@ class PublicField {
          student_field.set(student, "Lacey");
          
         // get the access modifier of StudentName
-         int mod1 = student_field.getModifiers();
+         int mod1 = student_field.getModifiers(); 
          String modifier1 = Modifier.toString(mod1);
          System.out.println("StudentName Modifier::" + modifier1);
         // get the value of field by converting in String

@@ -1,34 +1,30 @@
-package animalClass;
+package animalclass;
 
 import org.apache.logging.log4j.*;
 
-public class Cat extends Animal{
-	private static Logger demologger = LogManager.getLogger();
-	 public Cat(String animalName, int quality,
-	    		int weight,
-	    		int width,
-	    		int quantity,
-	    		int price,
-	    		int height,
-	    		int age) {
-	        super(animalName, weight,price, quantity, width, height, age, age);
+public class Cat extends Animal{ 
+	private static final Logger LOGGER = LogManager.getLogger(Cat.class);
+	 public Cat(String animalName, int quality,	int weight,	int width,	int price,	int height,	int age)
+	 {
+	        super(animalName, weight,price,width, height, age, age);
 	    }
+	 
 	    @Override
 	    public void makeRun(){
-	        System.out.println("AnimalClass.Cat Runs");
+	        LOGGER.info("AnimalClass.Cat Runs");
 	    }
 	    
 	    public void makeBreath(){
-	        System.out.println("Cat runs");
+	        LOGGER.info("Cat runs");
 	    }
 	    public void makeHeal(){
-	        System.out.println("Cat Heals");
+	        LOGGER.info("Cat Heals");
 	    }
 	    public void makeEat(){
-	        System.out.println("Cat eating");
+	        LOGGER.info("Cat eating");
 	    }
 	    public void makeRest(){
-	        System.out.println("Cat  heaving a rest ");
+	        LOGGER.info("Cat  heaving a rest ");
 	    }
 	    
 

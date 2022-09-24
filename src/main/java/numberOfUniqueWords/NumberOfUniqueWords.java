@@ -1,13 +1,15 @@
 //Java Program to Find the Number of Unique Words
 package numberOfUniqueWords;
 import org.apache.logging.log4j.*;
- 
+
+import animalclass.Animal;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
  
 public class NumberOfUniqueWords {
-	Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(NumberOfUniqueWords.class);
     // Function to calculate the number of unique words
     static int calculateNoOfUniqueWords(String str) {
         String[] words = str.split(" ");
@@ -32,15 +34,15 @@ public class NumberOfUniqueWords {
         BufferedReader br = new BufferedReader
                             (new InputStreamReader(System.in));
         String str;
-        System.out.println("Enter the string");
+        LOGGER.info("Enter the string");
         try {
             str = br.readLine();
         } catch (IOException e) {
-            System.out.println("An I/O error occurred");
+            LOGGER.info("An I/O error occurred");
             return;
         }
         int count = calculateNoOfUniqueWords(str);
-        System.out.println("Total number of unique words in \"" + 
+        LOGGER.info("Total number of unique words in \"" + 
                                          str + "\" are " + count);
     }
 }

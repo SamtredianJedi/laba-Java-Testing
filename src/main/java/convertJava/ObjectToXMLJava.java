@@ -1,4 +1,4 @@
-package convertJava;
+package convertjava;
 
 import java.io.FileOutputStream;  
 
