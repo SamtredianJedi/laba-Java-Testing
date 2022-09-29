@@ -8,7 +8,10 @@ public class Dog {
 	public Dog(String animalName, int quality,	int weight,	int width,	int quantity,	int price,	int height,int age) {
         super();
     }
-    public void makeRun(){
+    public Dog() {
+		// TODO Auto-generated constructor stub
+	}
+	public void makeRun(){
         LOGGER.info("AnimalClass.Dog Runs");
     }
     

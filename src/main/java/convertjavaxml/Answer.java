@@ -1,4 +1,4 @@
-package convertjava;
+package convertjavaxml;
 
 public class Answer {
 	

@@ -47,8 +47,8 @@ public class Collections {
 		list2.add(2.2);
 		list2.add(s1);
 		
-		System.out.println("list1 is: "+list1);
-		System.out.println("list2 is: "+list2);
+		LOGGER.info("list1 is: "+list1);
+		LOGGER.info("list2 is: "+list2);
 		
 		// Getting element from the list
 		

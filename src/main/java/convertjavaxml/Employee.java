@@ -1,4 +1,4 @@
-package convertjava;
+package convertjavaxml;
 
 import javax.xml.bind.annotation.XmlAttribute;  
 import javax.xml.bind.annotation.XmlElement;  

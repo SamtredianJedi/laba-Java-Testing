@@ -3,11 +3,13 @@ package exceptions;
 import java.io.File;
 import org.apache.logging.log4j.*;
 
+import animalclass.Animal;
+
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main{
-	private static Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(Main.class);
 	@SuppressWarnings("null")
 	public static void main(String args[]) throws FileNotFoundException, IncorrectFileNameException, ArithmeticException, ArrayIndexOutOfBoundsException, NumberFormatException {
 	
@@ -15,16 +17,16 @@ public class Main{
 	
 	{
 		String str = null;
-		System.out.println(str.length());
+		LOGGER.info(str.length());
 	
 		int a=30, b=0;
 		int c=a/b;
-		System.out.println("result ="+c);
+		LOGGER.info("result ="+c);
 		
 		
 		int num = Integer.parseInt("Rezo");
-		System.out.println(num);
-		System.out.println(" other statement");
+		LOGGER.info(num);
+		LOGGER.info(" other statement");
 
 	
 		int a1[]= new int[5];
@@ -50,7 +52,7 @@ public class Main{
 	      throw new ArithmeticException("Access denied - You must be at least 18 years old.");
 	    }
 	    else {
-	      System.out.println("Access granted - You are old enough!");
+	      LOGGER.info("Access granted - You are old enough!");
 	    }
 	  }
 

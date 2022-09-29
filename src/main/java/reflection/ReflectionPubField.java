@@ -3,9 +3,11 @@ import org.apache.logging.log4j.*;
 import java.lang.Class;
 import java.lang.reflect.*;
 class Student {
-	 Logger demologger = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(Student.class);
   public String StudentName;
 }
+
+
 class PublicField {
 	private static final Logger LOGGER = LogManager.getLogger(PublicField.class);
   public static void main(String[] args) {

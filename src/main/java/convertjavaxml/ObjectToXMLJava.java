@@ -1,4 +1,4 @@
-package convertjava;
+package convertjavaxml;
 
 import java.io.FileOutputStream;  
 

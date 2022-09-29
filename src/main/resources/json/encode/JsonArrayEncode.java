@@ -1,4 +1,4 @@
-package json;
+package json.encode;
 
 import org.json.simple.JSONArray;  
 import org.apache.logging.log4j.*;

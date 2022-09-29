@@ -9,7 +9,8 @@ public class Cat extends Animal{
 	        super(animalName, weight,price,width, height, age, age);
 	    }
 	 
-	    @Override
+
+		@Override
 	    public void makeRun(){
 	        LOGGER.info("AnimalClass.Cat Runs");
 	    }
@@ -28,7 +29,7 @@ public class Cat extends Animal{
 	    }
 	    
 
-
+	    
 	}
 
 	

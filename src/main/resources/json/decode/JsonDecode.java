@@ -1,6 +1,6 @@
 
 
- package json;
+ package json.decode;
  
 
 import org.json.simple.JSONObject;

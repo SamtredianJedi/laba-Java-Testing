@@ -1,4 +1,4 @@
-package json;
+package json.encode;
 
 import java.util.HashMap;  
 import java.util.Map;
