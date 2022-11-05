@@ -7,6 +7,7 @@ import animalclass.Zoo;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.PriorityQueue;
 
 
@@ -20,11 +21,11 @@ public class Collections {
      public static void main(String[] args) {
     	 
 		// it is only for String Objects
-		ArrayList<String> list1 = new ArrayList<String>();
+		List<String> list1 = new ArrayList<String>();
 		
 		// it is for any type of object
 		
-		ArrayList<Object> list2 = new ArrayList<Object>();
+		List<Object> list2 = new ArrayList<Object>();
 		
 		Student s1 = new Student();
 		s1.roll = 101;

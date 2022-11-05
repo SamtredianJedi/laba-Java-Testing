@@ -15,8 +15,8 @@ import animalclass.Animal;
 
 import org.apache.logging.log4j.*;
 
-public class JavaXmlDomReadEx {
-	private static final Logger LOGGER = LogManager.getLogger(JavaXmlDomReadEx.class);
+public class XmlDomReadEx {
+	private static final Logger LOGGER = LogManager.getLogger(XmlDomReadEx.class);
     public static void main(String argv[]) throws SAXException,
             IOException, ParserConfigurationException {
 

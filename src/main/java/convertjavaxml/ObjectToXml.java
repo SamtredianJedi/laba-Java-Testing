@@ -6,7 +6,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;  
   
   
-public class ObjectToXMLJava {  
+public class ObjectToXml {  
 public static void main(String[] args) throws Exception{  
     JAXBContext contextObj = JAXBContext.newInstance(Employee.class);  
   
@@ -15,7 +15,7 @@ public static void main(String[] args) throws Exception{
   
     Employee emp1=new Employee(1,"Vimal Jaiswal",50000);  
       
-    marshallerObj.marshal(emp1, new FileOutputStream("employee.xml"));  
+    marshallerObj.marshal(emp1, new FileOutputStream("src/main/resources/xml/employee.xml"));  
        
 }  
 }  

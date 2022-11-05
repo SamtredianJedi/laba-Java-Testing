@@ -2,16 +2,25 @@ package animalclass;
 
 import org.apache.logging.log4j.*;
 
-public class Cat extends Animal{ 
+public class Cat { 
 	private static final Logger LOGGER = LogManager.getLogger(Cat.class);
+	
 	 public Cat(String animalName, int quality,	int weight,	int width,	int price,	int height,	int age)
 	 {
-	        super(animalName, weight,price,width, height, age, age);
+	        super();
 	    }
 	 
 
-		@Override
-	    public void makeRun(){
+		
+
+		public Cat() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+		public void makeRun(){
 	        LOGGER.info("AnimalClass.Cat Runs");
 	    }
 	    
@@ -27,6 +36,12 @@ public class Cat extends Animal{
 	    public void makeRest(){
 	        LOGGER.info("Cat  heaving a rest ");
 	    }
+
+
+		public void ExistsIn(String string, String string2) {
+			// TODO Auto-generated method stub
+			
+		}
 	    
 
 	    

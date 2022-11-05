@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Main{
 	private static final Logger LOGGER = LogManager.getLogger(Main.class);
 	@SuppressWarnings("null")
-	public static void main(String args[]) throws FileNotFoundException, IncorrectFileNameException, ArithmeticException, ArrayIndexOutOfBoundsException, NumberFormatException {
+	public static void main(String args[]) throws IncorrectFileNameException {
 	
 
 	

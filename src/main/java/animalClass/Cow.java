@@ -7,7 +7,10 @@ public class Cow extends Animal {
     public Cow(String animalName, int quality,int weight,int width,int price,int height,int age) {
         super(animalName, weight,price, age, height, price, age);
     }
-    @Override
+    
+   
+
+	@Override
     public void makeRun(){
         LOGGER.info("animalclass.Cow Runs");
     }

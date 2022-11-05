@@ -6,7 +6,10 @@ public class Wolf {
 	 public Wolf(String animalName, int quality, int weight,int width,int price,int height,int age) {
 	       super();
 	    }
-	    public void makeRun(){
+	    public Wolf() {
+		// TODO Auto-generated constructor stub
+	}
+		public void makeRun(){
 	        LOGGER.info("animalclass.Wolf Runs"); 
 	    }
 	    
@@ -22,6 +25,10 @@ public class Wolf {
 	    public void makeRest(){
 	        LOGGER.info("Wolf  heaving a rest ");
 	    }
+		public void ExistsIn(String string, String string2) {
+			// TODO Auto-generated method stub
+			
+		}
 	    
 
 

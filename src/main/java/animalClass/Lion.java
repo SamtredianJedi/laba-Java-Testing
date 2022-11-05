@@ -8,7 +8,10 @@ public class Lion {
 	 public Lion(String animalName, int quality,int weight,int width, int price,int height,int age) {
 	        super();
 	    }
-	    public void makeRun(){
+	    public Lion() {
+		// TODO Auto-generated constructor stub
+	}
+		public void makeRun(){
 	        LOGGER.info("animalclass.Lion Runs");
 	    }
 	    
@@ -24,6 +27,10 @@ public class Lion {
 	    public void makeRest(){
 	        LOGGER.info("Lion  heaving a rest ");
 	    }
+		public void ExistsIn(String string, String string2) {
+			// TODO Auto-generated method stub
+			
+		}
 	    
 
 

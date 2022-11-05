@@ -11,6 +11,7 @@ public class Avaries  {
     final private String animalType;
     private int animalQuantity;
 
+    
     public Avaries(int area, ArrayList<Animal> animals, String animalType){
         this.area = area;
         this.animals = animals;

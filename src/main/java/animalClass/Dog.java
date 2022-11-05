@@ -27,6 +27,10 @@ public class Dog {
     public void makeRest(){
         LOGGER.info("Dog  heaving a rest ");
     }
+	public void ExistsIn(String string, String string2) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }
